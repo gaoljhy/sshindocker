@@ -48,7 +48,7 @@ A docker with ssh in docker Container
     `docker pull adminhub/sshindocker:latest`
 2. run  Container
     `docker run -d -p 10022:22 -v /var/run/docker.sock:/var/run/docker.sock --name docker_ssh adminhub/sshindocker:sshd`
-
+  > or add privileged , isolate ....
 3. ssh interface
     `ssh root@localhost -p 10022`
 
